@@ -50,9 +50,9 @@ global.yukiJadibts = true
 global.packname = '✿ Datar ✿'
 global.botname = 'Datar'
 global.wm = '✿◟Datar◞✿'
-global.author = '© mᥲძᥱ ᥕі𝗍һ ᑲᥡ ⁱᵃᵐ|Neykoor'
-global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ ⁱᵃᵐ|Neykoor'
-global.textbot = 'Datar, mᥲძᥱ ᥕі𝗍һ ᑲᥡ ⁱᵃᵐ|Neykoor'
+global.author = '© 𝚖𝚊𝚍𝚎 𝚠𝚒𝚝𝚑 𝚋𝚢 ⁱᵃᵐ|Neykoor'
+global.dev = '© ⍴᥆ᥕᥱrᥱძ 𝚋𝚢 ⁱᵃᵐ|Neykoor'
+global.textbot = 'Datar, 𝚖𝚊𝚍𝚎 𝚠𝚒𝚝𝚑 𝚋𝚢 ⁱᵃᵐ|Neykoor'
 global.etiqueta = 'ⁱᵃᵐ|Neykoor'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
