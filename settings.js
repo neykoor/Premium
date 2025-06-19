@@ -31,7 +31,7 @@ global.owner = [
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.mods = []
-global.suittag = ['5212202410659'] 
+global.suittag = [] 
 global.prems = []
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -47,13 +47,13 @@ global.yukiJadibts = true
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = '⪛✰ 𝐘𝐮𝐤𝐢-𝐒𝐮𝐨𝐮-𝐁𝐨𝐭 ✰⪜'
-global.botname = 'ᥡᥙkі sᥙ᥆ᥙ'
-global.wm = '✿◟Yυƙι Sυσυ◞✿'
-global.author = '© mᥲძᥱ ᥕі𝗍һ ᑲᥡ ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜'
-global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜'
-global.textbot = 'Yuki, mᥲძᥱ ᥕі𝗍һ ᑲᥡ ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ'
-global.etiqueta = 'ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜'
+global.packname = '✿ Datar ✿'
+global.botname = 'Datar'
+global.wm = '✿◟Datar◞✿'
+global.author = '© mᥲძᥱ ᥕі𝗍һ ᑲᥡ ⁱᵃᵐ|Neykoor'
+global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ ⁱᵃᵐ|Neykoor'
+global.textbot = 'Datar, mᥲძᥱ ᥕі𝗍һ ᑲᥡ ⁱᵃᵐ|Neykoor'
+global.etiqueta = 'ⁱᵃᵐ|Neykoor'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -65,19 +65,19 @@ global.avatar = 'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/ma
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.gp1 = 'https://chat.whatsapp.com/GeMUm4iACPPKRPrKBRKM8c'
-global.comunidad1 = 'https://chat.whatsapp.com/I0dMp2fEle7L6RaWBmwlAa'
-global.channel = 'https://whatsapp.com/channel/0029VbAfPu9BqbrEMFWXKE0d'
-global.channel2 = 'https://whatsapp.com/channel/0029VbAfPu9BqbrEMFWXKE0d'
-global.md = 'https://github.com/The-King-Destroy/Yuki_Suou-Bot'
-global.correo = 'thekingdestroy507@gmail.com'
+global.gp1 = ''
+global.comunidad1 = ''
+global.channel = ''
+global.channel2 = ''
+global.md = ''
+global.correo = ''
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.catalogo = fs.readFileSync('./src/catalogo.jpg');
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: packname, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 global.ch = {
-ch1: '120363416409380841@newsletter',
+ch1: '',
 }
 global.multiplier = 60
 
