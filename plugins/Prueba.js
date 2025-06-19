@@ -8,26 +8,35 @@ const handler = async (m, { conn }) => {
   const end = performance.now()
   const ping = (end - start).toFixed(2)
 
-  // Estado de conexión
-  const connectionStatus = conn?.ws?.readyState === 1 ? '🟢 Conectado (OPEN)' :
-                          conn?.ws?.readyState === 0 ? '🟡 Conectando...' :
-                          conn?.ws?.readyState === 2 ? '🟠 Cerrando conexión...' :
-                          '🔴 Desconectado (CLOSED)'
+  // Verifica si el usuario (bot) está conectado
+  const isLoggedIn = !!conn?.user?.id
+  const connectionStatus = isLoggedIn
+    ? '🟢 Conectado'
+    : '🔴 Desconectado'
 
-  // Última desconexión si la hay
-  const lastDisconnect = conn?.ws?.lastDisconnect?.error?.message || 'Ninguna'
-  const isReconnectActive = !!conn?.ws?.reconnectIntervalMs
+  const readyState = conn?.ws?.readyState
+  let stateReadable = 'Desconocido'
+  switch (readyState) {
+    case 0: stateReadable = '🟡 Conectando...'; break
+    case 1: stateReadable = '🟢 Abierto'; break
+    case 2: stateReadable = '🟠 Cerrando'; break
+    case 3: stateReadable = '🔴 Cerrado'; break
+  }
+
+  const reconnecting = !!conn?.ws?.reconnectIntervalMs
   const pendingRequests = conn?.ws?.pendingRequests?.size || 0
+  const lastDisconnect = conn?.ws?.lastDisconnect?.error?.message || 'Ninguno'
 
   const status = `
 ╭─⬣ *📡 Diagnóstico del Bot*
-┃🔌 *Estado de conexión:* ${connectionStatus}
-┃🔁 *¿Reconexión activa?:* ${isReconnectActive ? '🟠 Sí' : '✅ No'}
+┃🔌 *Estado de sesión:* ${connectionStatus}
+┃🌐 *Socket:* ${stateReadable}
+┃🔁 *¿Reconexión activa?:* ${reconnecting ? '🟠 Sí' : '✅ No'}
 ┃📤 *Mensajes pendientes:* ${pendingRequests}
-┃⏱️ *Tiempo activo:* ${Math.floor(uptime)} segundos
-┃📶 *Ping:* ${ping} ms
 ┃🧠 *Memoria usada:* ${memory.toFixed(2)} MB
-┃⚠ *Último error:* ${lastDisconnect}
+┃⏱️ *Uptime:* ${Math.floor(uptime)}s
+┃📶 *Ping:* ${ping} ms
+┃⚠️ *Último error:* ${lastDisconnect}
 ╰───────────────⬣
 `.trim()
 
